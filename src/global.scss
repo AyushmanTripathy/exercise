@@ -1,0 +1,39 @@
+$bg: #212121;
+$sec: #bbb;
+$hl: #105fe8;
+
+@mixin fixed {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+@mixin pri-fonts {
+  font-family: 'Edu TAS Beginner', cursive;
+}
+
+@mixin section ($height,$width) {
+  height: $height;
+  width: $width;
+}
+
+@mixin flex($dir) {
+  display: flex;
+  flex-direction: $dir;
+}
+
+@mixin center {
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin absolute {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@mixin fullscreen {
+  height: 100vh;
+  width: 100vw;
+}
